@@ -4,7 +4,8 @@
 Insertion sort is a sorting algorithm that is similar to bubble sort but instead 
 of comparing and swapping at every element, we compare and shift. Insertion sort 
 has on average a faster runtime than bubble sort as often times insertion sort can 
-exit it's inner loop early where bubble sort always goes to the end of the array.
+exit its inner loop early where bubble sort always goes to the end of the array.
+
 ---
 
 ## Learning Objectives

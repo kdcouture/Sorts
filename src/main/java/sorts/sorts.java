@@ -5,19 +5,19 @@ package sorts;
 
 public class sorts {
 
-    public static int[] insertionSort(int[] inArr){
+    public static int[] insertionSort(int[] inArr) {
 
         // Iterate through the input array from index length-1 to index 1
-        for(int i = 0; i < inArr.length; i++) {
+        for (int i = 0; i < inArr.length; i++) {
             int cur = inArr[i];
             // Iterate through all elements to the left of the current index.
-            int j = i-1;
-            while(j >= 0 && cur < inArr[j]) {
+            int j = i - 1;
+            while (j >= 0 && cur < inArr[j]) {
                 // While the current is less than the element to it's left, keep moving.
-                inArr[j+1] = inArr[j];
+                inArr[j + 1] = inArr[j];
                 j--;
             }
-            inArr[j+1] = cur;
+            inArr[j + 1] = cur;
         }
         return inArr;
     }

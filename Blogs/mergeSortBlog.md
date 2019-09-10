@@ -61,5 +61,5 @@ Check out these resources for more information regarding merge sort.
 [Link to video]()  
 
 ##### Readings
-[Merge sort - wikipedia](https://en.wikipedia.org/wiki/Insertion_sort) - A slightly complex, convoluted and over the top spattering of insertion sort details.  
-[Merge sort - GeeksforGeeks](https://www.geeksforgeeks.org/insertion-sort/) - A more on topic article about insertion sort.  
+[Merge sort - wikipedia](https://en.wikipedia.org/wiki/Merge_sort) - A slightly complex, convoluted and over the top spattering of insertion sort details.  
+[Merge sort - GeeksforGeeks](https://www.geeksforgeeks.org/merge-sort/) - A more on topic article about insertion sort.  

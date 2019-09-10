@@ -3,9 +3,11 @@
  */
 package sorts;
 
+import java.util.Arrays;
+
 public class sorts {
 
-    public static int[] insertionSort(int[] inArr) {
+    public static void insertionSort(int[] inArr) {
 
         // Iterate through the input array from index length-1 to index 1
         for (int i = 0; i < inArr.length; i++) {
@@ -19,7 +21,45 @@ public class sorts {
             }
             inArr[j + 1] = cur;
         }
-        return inArr;
+    }
+
+    public static void mergeSort(int[] inArr) {
+        if(inArr.length > 1) {
+            int mid = (int)Math.floor(inArr.length/2);
+            int[] leftSide = Arrays.copyOfRange(inArr,0, mid);
+            int[] rightSide = Arrays.copyOfRange(inArr, mid, inArr.length);
+
+            mergeSort(leftSide);
+            mergeSort(rightSide);
+            merge(leftSide, rightSide, inArr);
+        }
+    }
+
+    public static void merge(int[] l, int[] r, int[] inArr) {
+        int i = 0, j = 0, k = 0;
+        while(i < l.length && j < r.length && k < inArr.length) {
+            if(l[i] < r[j]) {
+                inArr[k] = l[i];
+                i++;
+            }
+            else {
+                inArr[k] = r[j];
+                j++;
+            }
+            k++;
+        }
+        // Place remaining left side elements.
+        while(i < l.length){
+            inArr[k] = l[i];
+            i++;
+            k++;
+        }
+        // Place remaining left side elements.
+        while(j < r.length){
+            inArr[k] = r[j];
+            j++;
+            k++;
+        }
     }
 
 }

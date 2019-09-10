@@ -18,6 +18,25 @@ public class LibraryTest {
         testArray2 = new int[]{4, 3, 1, 2}; // Even length test array.
     }
 
+    @Test public void testQuickSortSafeCases() {
+        sorts.quickSort(testArray, 0, testArray.length-1);
+        Assert.assertEquals("Should be sorted in ascending order.", "[1, 2, 3, 4, 5]", Arrays.toString(testArray));
+        sorts.quickSort(testArray2, 0, testArray2.length-1);
+        Assert.assertEquals("Should be sorted in ascending order.", "[1, 2, 3, 4]", Arrays.toString(testArray2));
+    }
+
+    @Test public void testQuickSortEdgeCases() {
+        int[] testSingle = {1};
+        int[] testEmpty= {};
+        int[] testDuo = {2, 1};
+        sorts.quickSort(testEmpty, 0, testEmpty.length-1);
+        Assert.assertEquals("Empty","[]", Arrays.toString(testEmpty));
+        sorts.quickSort(testSingle, 0, testSingle.length-1);
+        Assert.assertEquals("Single", "[1]", Arrays.toString(testSingle));
+        sorts.quickSort(testDuo, 0, testDuo.length-1);
+        Assert.assertEquals("Duo", "[1, 2]", Arrays.toString(testDuo));
+    }
+
     @Test public void testInsertionSortSafeCases() {
         int[] testArr = {7, 1, 4, 3, 5, 2, 6};
         sorts.insertionSort(testArr);

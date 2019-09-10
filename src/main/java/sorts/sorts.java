@@ -7,6 +7,33 @@ import java.util.Arrays;
 
 public class sorts {
 
+    public static void quickSort(int[] inArr, int l, int r) {
+        if(l < r) {
+            int position = quickSortPartition(inArr, l, r);
+            quickSort(inArr, l, position -1);
+            quickSort(inArr, position + 1, r);
+        }
+    }
+
+    public static int quickSortPartition(int[] inArr, int l, int r) {
+        int pivot = r;
+        int low = l -1;
+        for(int i = l; i <= r; i++) {
+            if(inArr[i] <= pivot) {
+                low++;
+                swap(inArr, i, low);
+            }
+        }
+        swap(inArr, r, low+1);
+        return low + 1;
+    }
+
+    public static void swap(int[] inArr, int idx1, int idx2) {
+        int temp = inArr[idx1];
+        inArr[idx1] = inArr[idx2];
+        inArr[idx2] = temp;
+    }
+
     public static void insertionSort(int[] inArr) {
 
         // Iterate through the input array from index length-1 to index 1

@@ -50,10 +50,10 @@ For Eech element in A:
 Check out these resources for more information regarding insertion sort.
 
 ##### Whiteboard Outline
-[Link to Whiteboard]()
+![Link to Whiteboard](https://github.com/kdcouture/Sorts/blob/master/Blogs/Assets/insertionSort.jpg)
 
 ##### Video
-[Link to video]()  
+[Link to video](https://www.youtube.com/watch?v=JU767SDMDvA) - Youtube: Insertion sort in 2 minutes by Michael Sambol
 
 ##### Readings
 [Insertion sort - wikipedia](https://en.wikipedia.org/wiki/Insertion_sort) - A slightly complex, convoluted and over the top spattering of insertion sort details.  

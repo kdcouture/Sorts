@@ -3,11 +3,21 @@
  */
 package sorts;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.Assert;
 import java.util.Arrays;
 
 public class LibraryTest {
+
+    int[] testArray;
+    int[] testArray2;
+
+    @Before public void init() {
+        testArray = new int[]{4, 5, 1, 2, 3}; // Odd length test array.
+        testArray2 = new int[]{4, 3, 1, 2}; // Even length test array.
+    }
+
     @Test public void testInsertionSortSafeCases() {
         int[] testArr = {7, 1, 4, 3, 5, 2, 6};
         sorts.insertionSort(testArr);
@@ -32,4 +42,22 @@ public class LibraryTest {
         Assert.assertEquals("Should be sorted in ascending order.", "[1]", Arrays.toString(testArr2));
 
     }
+
+    @Test public void testMergeSortSafe() {
+        sorts.mergeSort(testArray);
+        sorts.mergeSort(testArray2);
+        Assert.assertEquals("Should be sorted in ascending order.", "[1, 2, 3, 4, 5]", Arrays.toString(testArray));
+        Assert.assertEquals("Should be sorted in ascending order.", "[1, 2, 3, 4]", Arrays.toString(testArray2));
+    }
+
+    @Test public void testMergeSortEdge() {
+        int[] testArr = {2};
+        sorts.mergeSort(testArr);
+        Assert.assertEquals("[2]", "[2]", Arrays.toString(testArr));
+        int[] testArr2 = {};
+        sorts.mergeSort(testArr);
+        Assert.assertEquals("Empty array", "[]", Arrays.toString(testArr2));
+    }
+
+
 }

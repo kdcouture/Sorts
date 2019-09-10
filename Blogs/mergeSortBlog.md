@@ -1,6 +1,9 @@
 # Merge Sort
 
-Description TODO!!!
+Merge sort is a type of sorting algorithm that follows the concept of divide and conquer.
+Merge sort starts by breaking the input array in half until it only has a single element, then 
+starts sorting and merging the sub arrays back together.
+
 ---
 
 ## Learning Objectives
@@ -10,11 +13,15 @@ Description TODO!!!
 ---
 
 ### What is merge sort?
-
+Merge sort is an effective sort that breaks apart the input array and then 
+puts the sub arrays back together while sorting them. This sort works 
+very well with recursion but iterative solutions also exist.
 
 
 ### When does merge work the best?
-
+Merge sort works in O(n log n) time with a space complexity of O(n). This points 
+to merge sort working well with small to medium data sets, or sets that are large but 
+in environment that space is less sensitive.
  
 ---
 ### Algorithm
@@ -22,13 +29,21 @@ Description TODO!!!
 
 ### Pseudo Code 
 ```
-MERGESORT PSEUDO CODE
+MERGESORT - PSEUDO CODE
 Let A = an array of integers
+Let m = A.length/2
+Let L = A.subarray(0, m)
+Let R = A.subarray(m+1, A.length)
+
+MERGESORT(L)
+MERGESORT(R)
+
+MERGE(A,L,R)
 
 ```
 
 ```
-MERGE PSEUDO CODE
+MERGE - PSEUDO CODE
 Let A, L and R be an array of integers
 Let i, j, k = 0
 

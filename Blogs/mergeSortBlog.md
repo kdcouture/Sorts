@@ -76,5 +76,5 @@ Check out these resources for more information regarding merge sort.
 [Link to video](https://www.youtube.com/watch?v=KF2j-9iSf4Q) - Algorithms: Merge Sort by HackerRank  
 
 ##### Readings
-[Merge sort - wikipedia](https://en.wikipedia.org/wiki/Merge_sort) - A slightly complex, convoluted and over the top spattering of insertion sort details.  
-[Merge sort - GeeksforGeeks](https://www.geeksforgeeks.org/merge-sort/) - A more on topic article about insertion sort.  
+[Merge sort - wikipedia](https://en.wikipedia.org/wiki/Merge_sort) - A slightly complex, convoluted and over the top spattering of merge sort details.  
+[Merge sort - GeeksforGeeks](https://www.geeksforgeeks.org/merge-sort/) - A more on topic article about merge sort.  

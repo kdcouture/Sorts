@@ -49,8 +49,8 @@ Check out these resources for more information regarding quick sort.
 [Link to Whiteboard]()
 
 ##### Video
-[Link to video]() -   
+[Link to video](https://www.youtube.com/watch?v=SLauY6PpjW4) - Algorithms: Quicksort by HackerRank
 
 ##### Readings
-[Merge sort - wikipedia]() - A slightly complex, convoluted and over the top spattering of quick sort details.  
-[Merge sort - GeeksforGeeks]() - A more on topic article about quick sort.  
+[Quick sort - wikipedia](https://en.wikipedia.org/wiki/Quicksort) - A slightly complex, convoluted and over the top spattering of quick sort details.  
+[Quick sort - GeeksforGeeks](https://www.geeksforgeeks.org/quick-sort/) - A more on topic article about quick sort.  

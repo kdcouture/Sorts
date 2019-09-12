@@ -70,7 +70,7 @@ WHILE j < R.length
 Check out these resources for more information regarding merge sort.
 
 ##### Whiteboard Outline
-[Link to Whiteboard]()
+[Link to Whiteboard](https://github.com/kdcouture/Sorts/blob/master/Blogs/Assets/mergeSortWhiteBoard.jpg)
 
 ##### Video
 [Link to video](https://www.youtube.com/watch?v=KF2j-9iSf4Q) - Algorithms: Merge Sort by HackerRank  
